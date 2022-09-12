@@ -1,0 +1,29 @@
+//mixins like functions
+/*@mixin flexCenter($direction, $background) {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+  background: $background;
+}*/
+
+header {
+  @include flexCenter(column, red);
+
+  background: lightblue;
+
+  //nested button
+  button {
+    background: $primaryBtn;
+    color: $textColor;
+
+    &:hover {
+      background: $hoverColor;
+    }
+
+    &::after {
+      content: "Hellooooo";
+    }
+  }
+}

@@ -1,0 +1,23 @@
+//variables
+$primaryBtn: rgb(69, 101, 199);
+$textColor: black;
+$hoverColor: rgb(255, 0, 0);
+
+//import the header
+@import "./header";
+
+/* nested in header
+header button {
+  background: $primaryBtn;
+  color: $textColor;
+}*/
+
+.contact {
+  @extend header; //inherit css of header
+
+  @include flexCenter(row, blue);
+
+  button {
+    background: $primaryBtn;
+  }
+}

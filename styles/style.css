@@ -1,0 +1,33 @@
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: red;
+  background: lightblue;
+}
+header button {
+  background: rgb(69, 101, 199);
+  color: black;
+}
+header button:hover {
+  background: rgb(255, 0, 0);
+}
+header button::after {
+  content: "Hellooooo";
+}
+
+/* nested in header
+header button {
+  background: $primaryBtn;
+  color: $textColor;
+}*/
+.contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background: blue;
+}/*# sourceMappingURL=style.css.map */
